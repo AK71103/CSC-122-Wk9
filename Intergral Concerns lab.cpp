@@ -13,6 +13,7 @@ using namespace std;
 //using the Riemann Sum, Approx the area of f from A and B.
 //use a default argument to set percision to 100
 
+//A is the lower limit, B is the upper limit, Prcsn is the number of intervals
 double IntrGrt(function<double(double)> f, double A, double B,int Prcsn = 100) {
     if(Prcsn<=0){ // Input validation
         throw std:: invalid_argument("Percision must be a positive number!");
